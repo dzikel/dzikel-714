@@ -52,8 +52,8 @@ for i=2:(nt+1)
    uu((n+1)*(x-1)+j) = q(j);
   end
  end
- uu
- pause();
+ %uu
+ %pause();
  for x=2:n
   a = zeros(n+1,1);
   for j = 1:(n+1)
