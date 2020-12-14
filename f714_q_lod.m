@@ -63,14 +63,15 @@ for i = 2:(nt+1)
  c(i,:) = exp(-10*pi*pi/nt)*c(i-1,:);
 end
 
+% copy comparison code from f714_q.m if necessary
 %u(nt+1,:)
-w = abs(u-c);
-for i = 1:(nt+1)
- for j = 1:((n+1)^2)
-  if w(i,j) > 0.24
-   disp (i*10000000+j);
-  end
- end
-end
+%w = abs(u-c);
+%for i = 1:(nt+1)
+% for j = 1:((n+1)^2)
+%  if w(i,j) > 0.24
+%   disp (i*10000000+j);
+%  end
+% end
+%end
 %max(abs(u-c),[],'all')
 u(:,50)
